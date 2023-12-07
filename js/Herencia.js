@@ -18,6 +18,8 @@ class User{
 
 class Studient extends User{
     constructor(){
-        this.
+        
     }
 }
+
+const pablo = new User('Pablots','Pablitox@gmail.com','pablo123');
