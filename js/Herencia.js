@@ -16,4 +16,8 @@ class User{
     }
 }
 
-class Studient{}
+class Studient extends User{
+    constructor(){
+        this.
+    }
+}
