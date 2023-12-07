@@ -17,9 +17,16 @@ class User{
 }
 
 class Studient extends User{
-    constructor(){
-        
+
+    Bye(){
+        console.log(`See you ${this.name} next time`);
     }
 }
 
-const pablo = new User('Pablots','Pablitox@gmail.com','pablo123');
+const Pablots = new User('Pablots','Pablots@gmail.com','Pablots123');
+const Jose = new User('Jose','Jose@gmail.com','Jose123');
+
+console.log(Pablots);
+console.log(Jose);
+
+
