@@ -6,6 +6,10 @@ class usuario{
         this.password = password;
     }
 
+    Hi(){
+        console.log(`Hi ${this.name} welcome back!`);
+    }
+
     Login(name,password){
         if (this.name === name && this.email && this.password)return true;
         else return false;
