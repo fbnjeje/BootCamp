@@ -1,4 +1,4 @@
-class usuario{
+class User{
 
     constructor(name,email,password){
         this.name = name;
@@ -15,3 +15,5 @@ class usuario{
         else return false;
     }
 }
+
+class Studient{}
