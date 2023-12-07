@@ -1,32 +1,44 @@
-class User{
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
 
-    constructor(name,email,password){
-        this.name = name;
-        this.email = email;
-        this.password = password;
+class Vehiculo{
+    
+    constructor(color,marca,ruedas){
+        this.marca = marca;
+        this.color = color;
+        this.ruedas = ruedas;
     }
-
-    Hi(){
-        console.log(`Hi ${this.name} welcome back!`);
-    }
-
-    Login(name,password){
-        if (this.name === name && this.email && this.password)return true;
-        else return false;
+    
+    moverse(){
+        console.log(`este vehiculo es de color ${this.color} y se desplaza en ${this.ruedas} ruedas`);
     }
 }
 
-class Studient extends User{
 
-    Bye(){
-        console.log(`See you ${this.name} next time`);
+class Motocicleta extends Vehiculo{
+    constructor(color,marca,ruedas) {
+        super(color,marca,ruedas);
     }
 }
 
-const Pablots = new User('Pablots','Pablots@gmail.com','Pablots123');
-const Jose = new User('Jose','Jose@gmail.com','Jose123');
+class Carro extends Vehiculo{
+    constructor(color,marca,ruedas){
+    super(color,marca,ruedas);
+    }
+    
+    moverse(){
+        console.log(`este Carro es de color ${this.color} y se desplaza en ${this.ruedas} ruedas`);
+    }
+}
 
-console.log(Pablots);
-console.log(Jose);
+function principal(){
+    let miMotocicleta = new Motocicleta('Rojo', 'Suzuki', 2);
+    let cocheDeDylan = new Carro('Negro', 'Toyota', 4);
 
+    // Imprime el método moverse del objeto miMotocicleta
+    return cocheDeDylan.moverse();
+    
+    // Retorna el método moverse del objeto cocheDeDylan
+}
 
+principal();
