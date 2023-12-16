@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+    display: grid;
+    place-content: center;
+}
