@@ -4,10 +4,19 @@ import App from './App.jsx'
 import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const hola = ({ text }) => {
+    return (<button>{text}</button>)
+}
 root.render(
     <React.Fragment>
-        <button>hola buton</button>
-        <button>hola buton</button>
+
+        {hola({ text: 'hola123' })}
+        {hola({ text: 'holq' })}
+
+
+
+
     </React.Fragment>
 
 );
