@@ -4,6 +4,7 @@
     color: #fff;
     font-size: .8rem;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .tw-followCard-header {
@@ -81,3 +82,5 @@ body {
     place-content: center;
     min-height: 100vh;
 }
+
+.App {}
