@@ -2,19 +2,21 @@ import './App.css'
 
 export function App() {
   return (
-    <section>
-      <header>
-        <img alt="avatar de usuario" src="https://unavatar.io/dribbble/omidnikrah" />
+    <article className='tw-followCard'>
+      <header className='tw-followCard-header'>
+        <img className='tw-followCard-avatar'
+          alt="avatar de usuario" src="https://unavatar.io/dribbble/omidnikrah" />
 
-        <div>
+        <div className='tw-followCard-info'>
           <strong>fbn</strong>
-          <span>@mondongo</span>
+          <span className='tw-followCard-infoUserName'>
+            @mondongo</span>
         </div>
       </header>
 
       <aside>
-        <button>seguir</button>
+        <button className='tw-followCard-button'>seguir</button>
       </aside>
-    </section>
+    </article>
   )
 }
