@@ -5,18 +5,7 @@ import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const hola = ({ text }) => {
-    return (<button>{text}</button>)
-}
 root.render(
-    <React.Fragment>
-
-        {hola({ text: 'hola123' })}
-        {hola({ text: 'holq' })}
-
-
-
-
-    </React.Fragment>
+    <div>Twiter Card</div>
 
 );
