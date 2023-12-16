@@ -1,9 +1,9 @@
 
 
-function organizador(numbers){
-    
-    numbers.sort(function( a,b){
-        return b-a;
+function organizador(numbers) {
+
+    numbers.sort(function (a, b) {
+        return b - a;
 
         // si la necesita de menor a mayor, cambia el b-a, a el a-b;
     });
@@ -11,4 +11,4 @@ function organizador(numbers){
 }
 
 
-organizador([1,4,2,5,3]);
+organizador([1, 4, 2, 5, 3]);
